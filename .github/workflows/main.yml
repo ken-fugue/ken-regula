@@ -8,8 +8,8 @@ jobs:
     - uses: actions/checkout@master
     - uses: fugue/regula-action@v2.8.0
       env:
-      FUGUE_API_ID: ${{ secrets.FUGUE_API_ID }}
-      FUGUE_API_SECRET: ${{ secrets.FUGUE_API_SECRET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       with:
         upload: "true"
         sync: "true"
