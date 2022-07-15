@@ -1,0 +1,11 @@
+environment-id: b4a43949-826e-412e-ab9b-5322943023c9
+exclude: []
+format: text
+input-type:
+- auto
+no-built-ins: false
+no-ignore: false
+only: []
+severity: unknown
+sync: false
+var-file: []
