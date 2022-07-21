@@ -56,8 +56,3 @@ policy[j] {
   not encrypted_managed_disks[md.id]
   j = fugue.deny_resource(md)
 }
-
-  md = managed_disks[_]
-  attached_data_disks[lower(md.id)]
-  encrypted_managed_disks[md.id]
-  lower(md.tags.vendormanaged) == "true"
